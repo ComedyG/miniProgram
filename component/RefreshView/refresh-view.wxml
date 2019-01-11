@@ -1,0 +1,5 @@
+<!--component/RefreshView/refresh-view.wxml-->
+<view style='background-color:{{backgroundColor}};height:{{refreshHeight}}rpx' class='refresh' hidden='{{refresh}}'>
+
+</view>
+

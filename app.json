@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/new/new"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#FA0C44",
+    "navigationBarTitleText": "百思不得姐",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "主页",
+      "iconPath": "images/tabBar/tabBar_essence_icon.png",
+      "selectedIconPath": "images/tabBar/tabBar_essence_click_icon.png"
+    },{
+      "pagePath": "pages/new/new",
+      "text": "最新",
+      "iconPath": "images/tabBar/tabBar_new_icon.png",
+      "selectedIconPath": "images/tabBar/tabBar_new_click_icon.png"
+    }],
+    "color": "#666666",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "backgroundColor": "#f8f9fb"
+    
+  }
+}

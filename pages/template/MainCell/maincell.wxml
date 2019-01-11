@@ -1,0 +1,54 @@
+<template name="maincell">
+<view class='maincellview'>
+<image class='headimg' src='{{item.profile_image}}'></image>
+<view class='nat'>
+<text class='name'>{{item.name}}</text>
+<text class='time'>{{item.create_time}}</text>
+</view>
+<!-->标题<-->
+<text class='title'>{{item.text}}</text>
+<!-->图片<-->
+<!--view class='contentImgview' hidden="{{(item.image1 && (!item.videouri && !item.voiceuri))  ? false : true}}">
+<image src='{{item.image1}}' mode='widthFix' class='contentImg'></image>
+</view-->
+<!-->视频<-->
+<view id='{{item.id}}' class='videoview' hidden="{{(item.videouri && !item.voiceurl) ? false : true}}" data-height='{{item.height}}' data-width='{{item.width}}' style='height:{{deviceWidth / item.width * item.height}}px;max-height:{{deviceWidth}}px;' bindtap='playvideo'>
+<video wx:if='{{item.id==currentvideo}}' id='{{item.id}}' src='{{item.videouri}}' class='contentvideo'></video>
+<view  class='coverview' hidden='{{item.id==currentvideo?play:false}}'>
+<image src='{{item.image0}}' class='fengImg' mode='aspectFit' style='width:{{deviceWidth / item.height * item.width}}px'></image>
+</view>
+<view class='playview' hidden='{{item.id==currentvideo?play:false}}'>
+<image src='../../images/other/feng.png'></image>
+</view>
+<view class='videodetail' style='width:{{deviceWidth + 20}}px' hidden='{{item.id==currentvideo?play:false}}'>
+<text class='playcount'>{{item.playcount}}播放</text>
+<text class='videotime'>{{item.videotime}}</text>
+</view>
+</view>
+</view>
+<!--底部区-->
+<view class='dingview'>
+<!--赞-->
+<view>
+<image src='../../images/index/mainCellDing.png'></image>
+<text>{{item.ding}}</text>
+</view>
+<!--踩-->
+<view>
+<image src='../../images/index/mainCellCai.png'></image>
+<text>{{item.hate}}</text>
+</view>
+<!--转发-->
+<view>
+<image src='../../images/index/mainCellShare.png'></image>
+<text>{{item.favourite}}</text>
+</view>
+<!--评论-->
+<view>
+<image src='../../images/index/mainCellComment.png'></image>
+<text>{{item.comment}}</text>
+</view>
+</view>
+
+<view class='bottomlabel'></view>
+</template>

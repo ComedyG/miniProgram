@@ -1,0 +1,6 @@
+/* component/RefreshView/refresh-view.wxss */
+.refresh{
+  width: 100%;
+  margin: 0px 0px;
+  min-height: 60rpx;
+}

@@ -1,0 +1,133 @@
+.maincellview{
+  margin: 0rpx 10rpx 0rpx 10rpx;
+  
+}
+.headimg{
+  height: 56rpx;
+  width: 56rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  vertical-align: middle;
+  border-radius: 28rpx;
+}
+.nat{
+  flex-direction: column;
+  display: inline-flex;
+  vertical-align: middle;
+  justify-content: space-evenly;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+.nat text{
+  color: black;
+  font-size: 18rpx;
+}
+.title{
+  display: block;
+  font-size: 16px;
+  margin-left: 10rpx;
+  margin-top: 20rpx;
+}
+.bottomlabel{
+  width:100%;
+  height:1rpx;
+  background-color:#dddcdc;
+}
+.contentImgview{
+  display: block;
+  margin: 10rpx 10rpx;
+}
+.contentImg{
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+.videoview{
+  position: relative;
+  display: block;
+  margin: 10rpx 10rpx;
+}
+.contentvideo{
+  margin: 0rpx 0rpx;
+  width:100%;
+  height: 100%;
+}
+.coverview{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-color: white;
+
+}
+.fengImg{
+  display: block;
+  max-width: 100%;
+  height: 100%;
+  margin:0 auto;
+}
+.playview
+{
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.playview image{
+  width: 40px;
+  height: 40px;
+  display: block;
+  margin: auto;
+}
+.videodetail{
+  position: absolute;
+  height: 25px;
+  bottom: 0;
+  left: -10px;
+  background: linear-gradient(to top,rgba(0, 0, 0, 0.4),rgba(255, 255, 255, 0.2));
+  line-height: 25px;
+}
+.playcount{
+  color: white;
+  font-size: 10px;
+  float: left;
+  margin-left: 25rpx;
+  line-height: 25px;
+}
+.videotime{
+  float: right;
+  color: white;
+  font-size: 10px;
+  margin-right: 25rpx;
+  line-height: 25px;
+}
+.dingview{
+  margin: 10rpx 30rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.dingview view{
+  display: inline-block;
+  flex-wrap: nowrap;
+}
+.dingview image{
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+}
+.dingview text{
+  color: grey;
+  font-size: 15px;
+  margin-left: 10rpx;
+  line-height: 15px;
+  vertical-align: middle;
+}

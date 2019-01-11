@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<import src="../template/MainCell/maincell.wxml"/>
+
+<view class="navcontainer">
+
+  <view class="top-tab-item {{currentTopItem==idx ? 'active' : ''}}" wx:for="{{navlist}}" wx:for-index="idx" data-idx="{{idx}}" bindtap="switchTab" wx:key='*this'>{{item}}</view>
+  
+</view>
+<view class='loadingview' hidden='{{finishload}}'>
+
+<view class="refresh-loading"></view>
+<text>正在刷新数据...</text>
+
+
+</view>
+
+<scroll-view scroll-y class='scrollview' style='height:{{scrollviewheight}}px' lower-threshold='80rpx' bindscrolltolower='loadMoreData' enable-back-to-top='true' bindscroll='scrollevent' bindscrolltoupper='refreshData' bindtouchend='touchend'>
+<view class='loadingview' hidden='{{touchStart}}' style='background-color:white'>
+<text>{{touchdesc}}</text>
+</view>
+<block wx:for="{{allDataList}}" wx:for-item="item">
+<template is="maincell" data="{{item,deviceWidth,play,currentvideo}}"/>
+</block>
+<view class='loadingview' hidden='{{finishloadmore}}'>
+
+<view class="refresh-loading"></view>
+<text>正在加载更多数据...</text>
+
+
+</view>
+</scroll-view>
